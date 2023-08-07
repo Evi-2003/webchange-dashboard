@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-rc.1-28164352.ad7c010",
+    "@nuxtjs/supabase": "^0.3.8",
+    "@types/node": "^18",
+    "autoprefixer": "^10.4.14",
+    "nuxt": "3.4.2",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@vueuse/nuxt": "^10.2.1",
+    "chart.js": "^4.3.2",
+    "vue-chartjs": "^5.2.0"
+  }
+}
