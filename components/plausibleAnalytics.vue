@@ -4,7 +4,7 @@
             <div class="flex flex-col lg:flex-row lg:space-x-10 h-fit w-full lg:pt-5">
               
                 <div class="relative h-fit w-fit mx-5">
-                  
+
                     <div class="my-5 lg:my-0 bg-transparant border-sky-950 text-sky-950 dark:border-white dark:text-white border-4 w-full lg:w-fit px-5 py-2 mt-5 rounded-xl">
                         <span class="absolute left-[-10px] top-[10px] lg:-top-[10px] flex h-7 w-7">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
@@ -12,10 +12,9 @@
                         </span>
                     <h3 class="text-2xl lg:text-3xl text-sky-950 font-bold dark:text-white">Live bezoekers: {{ count }}</h3></div>
                 </div>   
-                <button class="text-slate-200 dark:text-slate-200 text-2xl ml-5 sm:ml-0 sm:text-3xl font-bold dark:bg-sky-800 bg-sky-600 w-fit h-fit py-2 px-5 sm:px-3  sm:py-3 h-fit rounded-xl shadow-xl hover:shadow-2xl hover:scale-95" @click="logOut">Uitleg Dashboard</button>
             </div>
         </div>
-        <iframe class="drop-shadow-2xl" plausible-embed src="https://plausible.io/share/webchange.nl?auth=VfD9qaZrr6LlWybtw6pTR&embed=true&theme=system&background=%23ffffff00" scrolling="no" frameborder="0" loading="lazy" style="width: 1px; min-width: 100%; height: 1600px; "></iframe>
+        <iframe class="drop-shadow-2xl" plausible-embed :src="weburl" scrolling="no" frameborder="0" loading="lazy" style="width: 1px; min-width: 100%; height: 1600px; "></iframe>
         </div>
 
 
@@ -23,8 +22,8 @@
 <script setup>
 
 
-const supabase = useSupabaseClient()
 
+const supabase = useSupabaseClient()
 const loading = ref(true)
 const username = ref('')
 const website = ref('')
