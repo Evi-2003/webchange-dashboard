@@ -1,6 +1,5 @@
 <script setup>
-  const user = useSupabaseUser()  
-  
+  let user = useSupabaseUser() 
 </script>
 
 

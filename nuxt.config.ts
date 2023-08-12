@@ -35,10 +35,19 @@ export default defineNuxtConfig({
   app: {
     
     head: {
+      
+        script: [
+          {
+            src: "https://plausible.io/js/embed.host.js",
+            body: true
+          }
+        ],
+      
       charset: 'utf-8',
       htmlAttrs: {
         lang: 'nl'
       },
+      
     },
   },
   image: {
