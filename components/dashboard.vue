@@ -1,7 +1,7 @@
 <template>
   <Popup v-if="showModal" @click="showModal = !showModal"/>
   
-
+  <Script type="text/javascript" src="https://plausible.io/js/embed.host.js"/>
     <div class="flex flex-col lg:flow-row h-full w-screen" :class="{ active: showModal }" id="main">
         <div class="flex w-full h-fit bg-neutral-50 dark:bg-stone-950 lg:px-10 lg:px-20 lg:py-10">
           <div class="w-full lg:w-5/6 items-left text-left lg:mx-[100px] my-[25px] flex lg:space-x-[75px] flex flex-col">

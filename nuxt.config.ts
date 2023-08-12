@@ -39,12 +39,6 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'nl'
       },
-      script: [
-        {
-            src: "https://plausible.io/js/embed.host.js",
-            body: true
-        },
-    ],
     },
   },
   image: {
@@ -73,7 +67,8 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/supabase',
         '@nuxt/image-edge',
-        '@vueuse/nuxt'
+        '@vueuse/nuxt',
+        '@nuxtjs/partytown'
     ],
 
       }
