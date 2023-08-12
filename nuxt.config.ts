@@ -39,12 +39,6 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'nl'
       },
-      script: [
-        {
-            src: "https://plausible.io/js/embed.host.js",
-            body: true
-        },
-    ],
     },
   },
   image: {
