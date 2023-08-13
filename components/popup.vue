@@ -1,6 +1,9 @@
 <template>
-    <div id="uitleg" class="rounded-xl opacity-90 w-1/2 p-10 shadow-2xl bg-sky-900">
-        <h3 class="text-5xl text-white font-bold">Hoe werkt het dashboard?</h3>
+    <div id="uitleg" class="rounded-xl opacity-1 w-2/3 p-10 shadow-2xl bg-sky-900">
+        <div class="flex flex-row w-full justify-between">
+            <h3 class="text-5xl text-white font-bold w-fit">Hoe werkt het dashboard?</h3>
+            <span class="w-fit bg-white px-5 py-3 rounded-full m-0 text-3xl font-bold hover:scale-90 shadow-2xl text-slate-900">Sluiten</span>
+        </div>
         <h4 class="text-2xl text-white font-bold mt-4">Unique Visitors / Unieke Bezoekers</h4>
         <p class="text-white font-base text-xl">Deze aantallen zijn bezoekers die nog niet eerder jouw website hebben bezocht. Het zijn mensen die voor het eerst zijn gekomen naar jouw website. Dit is handig om mensen te onderscheiden, zodat bijvoorbeeld wij, of jij zelf niet wordt meegeteld in het aantal bezoekers.</p>
         <hr class="my-4">
@@ -34,7 +37,6 @@
         <h4 class="text-2xl text-white font-bold">Filteren</h4>
         <p class="text-white font-base text-xl">Rechtsboven kan je filteren welke data je wilt zien, bijvoorbeeld van de afgelopen 7 dagen. Ook kan je het vergelijken met de 'compare' functie.</p>
         
-        <span class="absolute top-10 right-10 bg-white px-5 py-3 rounded-full m-0 text-3xl font-bold hover:scale-90 shadow-2xl text-slate-900">Sluiten</span>
     </div>
 </template>
 
@@ -43,7 +45,7 @@
         min-height: 400px;
         position: absolute;
         z-index: 99;
-        top: 90%;
+        top: 110%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
