@@ -45,7 +45,7 @@
         min-height: 400px;
         position: absolute;
         z-index: 99;
-        top: 110%;
+        top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
     }

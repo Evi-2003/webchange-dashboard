@@ -39,7 +39,7 @@ export default defineNuxtConfig({
         script: [
           {
             src: "https://plausible.io/js/embed.host.js",
-            async: true
+            body: true
           }
         ],
       
