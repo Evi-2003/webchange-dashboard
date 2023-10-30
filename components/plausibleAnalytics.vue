@@ -95,8 +95,7 @@ async function uitloggen() {
 
 
 const url = 'https://plausible.io/api/v1/stats/realtime/visitors/?site_id=' + domain.value;
-const url30 = 'https://plausible.io/api/v1/stats/aggregate?site_id=' + domain.value + '&period=custom&date=2023-07-01,2023-07-26&metrics=visitors' ;
-const token = '22Q7wl5I2JNblwoIqJv_cmEr_CfaLTO1kKaZJKxFEQGqMxUJlpVmXt5ldygUeEU2'; // Vervang dit met je eigen bearer token
+const token = process.env.token;
 
 const { data: count } = await useFetch(url, {
   headers: {
